@@ -1,6 +1,6 @@
 // Smooth reveal on scroll
 const revealElements = document.querySelectorAll(
-  ".program-card, .project-card, .phase, .skill-box, .training-card, .video-section, figure, .about-card"
+  ".program-card, .project-card, .phase, .skill-box, .training-card, .video-section, figure, .about-card, .dashboard-section, .lux-break"
 );
 
 const revealOnScroll = new IntersectionObserver(
@@ -21,32 +21,46 @@ revealElements.forEach((element) => {
 
 // Update footer year
 const year = document.querySelector("#year");
+
 if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-// IMAGE MODAL
+// Premium image modal
 const imgModal = document.getElementById("imgModal");
 const modalImg = document.getElementById("modalImg");
-const closeModal = document.querySelector(".close-modal");
+const closeImgBtn = document.querySelector("#imgModal .close-modal");
 
-// OPEN IMAGE
-document.querySelectorAll(".clickable-img").forEach(img => {
-  img.addEventListener("click", function () {
+document.querySelectorAll(".clickable-img").forEach((img) => {
+  img.addEventListener("click", () => {
     imgModal.style.display = "flex";
-    modalImg.src = this.src;
+    modalImg.src = img.src;
+    modalImg.alt = img.alt || "Expanded portfolio image";
+    document.body.style.overflow = "hidden";
   });
 });
 
-// CLOSE IMAGE
-closeModal.addEventListener("click", () => {
+function closeImageModal() {
   imgModal.style.display = "none";
-});
+  modalImg.src = "";
+  document.body.style.overflow = "";
+}
 
-// CLOSE ON BACKGROUND CLICK
-imgModal.addEventListener("click", (e) => {
-  if (e.target === imgModal) {
-    imgModal.style.display = "none";
+if (closeImgBtn) {
+  closeImgBtn.addEventListener("click", closeImageModal);
+}
+
+if (imgModal) {
+  imgModal.addEventListener("click", (e) => {
+    if (e.target === imgModal) {
+      closeImageModal();
+    }
+  });
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && imgModal.style.display === "flex") {
+    closeImageModal();
   }
 });
 
@@ -57,6 +71,7 @@ function openVideo(videoId) {
 
   frame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
   modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
 }
 
 function closeVideo() {
@@ -65,4 +80,53 @@ function closeVideo() {
 
   frame.src = "";
   modal.style.display = "none";
+  document.body.style.overflow = "";
 }
+
+// Close video modal when clicking outside
+const videoModal = document.getElementById("videoModal");
+
+if (videoModal) {
+  videoModal.addEventListener("click", (e) => {
+    if (e.target === videoModal) {
+      closeVideo();
+    }
+  });
+}
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && videoModal && videoModal.style.display === "flex") {
+    closeVideo();
+  }
+});
+
+// Active nav highlighting
+const sections = document.querySelectorAll("section[id], footer[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+function updateActiveNav() {
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 140;
+    const sectionHeight = section.offsetHeight;
+
+    if (
+      window.scrollY >= sectionTop &&
+      window.scrollY < sectionTop + sectionHeight
+    ) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === `#${currentSection}`) {
+      link.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", updateActiveNav);
+window.addEventListener("load", updateActiveNav);
