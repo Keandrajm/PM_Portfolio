@@ -716,3 +716,29 @@ footer {
     letter-spacing: -1px;
   }
 }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.video-card.wide {
+  grid-column: span 2;
+}
+
+.video-thumbnail {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  font-size: 2rem;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  padding: 10px 14px;
+}
