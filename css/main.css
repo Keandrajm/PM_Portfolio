@@ -361,6 +361,112 @@ h3 {
   border-radius: 6px;
 }
 
+/* ── Data Section ─────────────────────────────────── */
+.data-section {
+  background: var(--porcelain);
+  padding: 72px 0;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.data-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--bright-gold);
+  border-radius: 8px;
+  padding: 28px 22px;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.data-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+}
+
+/* ── Tools Used + Transferable + Nav CTA + Availability ──── */
+.tools-used {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: rgba(27, 67, 50, 0.06);
+  border-left: 3px solid var(--bright-gold);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.tools-used strong {
+  color: var(--ink-green);
+}
+
+.transferable-box {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: rgba(184, 155, 99, 0.08);
+  border: 1px solid rgba(184, 155, 99, 0.3);
+  border-radius: 6px;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.transferable-box strong {
+  display: block;
+  color: var(--ink-green);
+  margin-bottom: 4px;
+}
+
+.nav-resume-btn {
+  display: inline-block;
+  padding: 7px 16px;
+  background: var(--bright-gold);
+  color: var(--deep-green) !important;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none !important;
+  transition: background 0.18s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.nav-resume-btn:hover {
+  background: #c9a84c;
+  transform: translateY(-1px);
+}
+
+.availability-note {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+  font-style: italic;
+}
+/* ─────────────────────────────────────────────────── */
+
+.data-icon {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.data-card h3 {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-green);
+  margin-bottom: 10px;
+}
+
+.data-card p {
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+/* ─────────────────────────────────────────────────── */
+
 .metric strong {
   display: block;
   font-size: 2.05rem;
@@ -1102,6 +1208,10 @@ figure:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .data-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .snapshot-grid,
   .playbook-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1145,6 +1255,7 @@ figure:hover {
   .project-grid,
   .skills-grid,
   .technical-grid,
+  .data-grid,
   .training-grid,
   .phase-grid,
   .video-grid,
