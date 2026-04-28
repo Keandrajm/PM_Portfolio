@@ -361,6 +361,135 @@ h3 {
   border-radius: 6px;
 }
 
+/* ── Technical Projects Section ──────────────────── */
+.technical-projects-section {
+  background: var(--ink-green);
+  padding: 80px 0;
+}
+
+.technical-projects-section .section-header div p.eyebrow {
+  color: var(--bright-gold);
+}
+
+.technical-projects-section .section-header h2 {
+  color: var(--cream);
+}
+
+.technical-projects-section .section-header > p {
+  color: rgba(233, 228, 208, 0.75);
+}
+
+.tech-project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.tech-project-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(233,228,208,0.12);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tech-project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.25);
+}
+
+.tech-mockup-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #0f2a1e;
+  border-bottom: 2px solid var(--bright-gold);
+}
+
+.tech-mockup-img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.tech-project-card:hover .tech-mockup-img {
+  transform: scale(1.02);
+}
+
+.tech-project-body {
+  padding: 24px 22px 22px;
+}
+
+.tech-project-body h3 {
+  color: var(--cream);
+  font-size: 1.15rem;
+  margin: 10px 0 8px;
+}
+
+.tech-project-body p {
+  color: rgba(233,228,208,0.78);
+  font-size: 0.93rem;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.tech-metrics {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tech-metrics span {
+  font-size: 0.85rem;
+  color: rgba(233,228,208,0.6);
+  background: rgba(255,255,255,0.06);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(233,228,208,0.1);
+}
+
+.tech-metrics strong {
+  color: var(--bright-gold);
+}
+
+.tech-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-tech {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.87rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.18s;
+  background: var(--bright-gold);
+  color: var(--deep-green);
+}
+
+.btn-tech:hover {
+  background: #c9a84c;
+  transform: translateY(-1px);
+}
+
+.btn-tech.outline {
+  background: transparent;
+  border: 1px solid rgba(233,228,208,0.35);
+  color: rgba(233,228,208,0.85);
+}
+
+.btn-tech.outline:hover {
+  border-color: var(--bright-gold);
+  color: var(--bright-gold);
+  background: transparent;
+  transform: translateY(-1px);
+}
+/* ─────────────────────────────────────────────────── */
+
 /* ── Data Section ─────────────────────────────────── */
 .data-section {
   background: var(--porcelain);
@@ -1208,7 +1337,8 @@ figure:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .data-grid {
+  .data-grid,
+  .tech-project-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1256,6 +1386,7 @@ figure:hover {
   .skills-grid,
   .technical-grid,
   .data-grid,
+  .tech-project-grid,
   .training-grid,
   .phase-grid,
   .video-grid,
