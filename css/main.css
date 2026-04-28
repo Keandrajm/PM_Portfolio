@@ -132,9 +132,7 @@ footer a:hover,
   display: grid;
   align-items: center;
   color: var(--cream);
-  background:
-    linear-gradient(115deg, rgba(13, 31, 24, 0.98) 0%, rgba(20, 40, 31, 0.96) 46%, rgba(31, 58, 46, 0.86) 100%),
-    url("../images/cafeteria-main.jpg") center / cover;
+  background: linear-gradient(135deg, #0d1f18 0%, #14281f 45%, #1b3a2c 100%);
   border-bottom: 1px solid rgba(184, 155, 99, 0.24);
 }
 
@@ -337,7 +335,11 @@ h3 {
 }
 
 .hero-card .image-card {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
+}
+
+.hero-card .image-card img {
+  object-position: center top;
 }
 
 .metrics-strip {
@@ -1200,8 +1202,15 @@ footer h2 {
   font-weight: 800;
 }
 
-.copyright {
+.portfolio-credit {
   margin-top: 18px;
+  font-size: 0.83rem;
+  color: rgba(184, 155, 99, 0.7);
+  letter-spacing: 0.02em;
+}
+
+.copyright {
+  margin-top: 6px;
   font-size: 0.85rem;
   color: rgba(233, 228, 208, 0.75);
 }
