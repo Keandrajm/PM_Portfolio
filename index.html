@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VK5E33VFSR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VK5E33VFSR');
-</script>
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
@@ -17,7 +8,8 @@
     content="Keandra Morris, Operations Project Manager specializing in program launch, process improvement, workflow automation, KPI dashboards, and data-driven operations. $500K budget managed, 40% workload reduction, 12K+ users served."
   />
   <title>Keandra Morris | Operations Project Manager Portfolio</title>
-  <link rel="stylesheet" href="css/main.css?v=20260428-02" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230d1f18'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial,sans-serif' font-size='20' font-weight='700' fill='%23d2b77c'%3EKM%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/main.css?v=20260428-06" />
 </head>
 
 <body>
@@ -29,10 +21,10 @@
           <a href="#program">Flagship Program</a>
           <a href="#projects">Projects</a>
           <a href="#technical">Python &amp; Data</a>
+          <a href="#careeros">AI Agents</a>
           <a href="#skills">Capabilities</a>
           <a href="#about">Profile</a>
           <a href="#contact">Contact</a>
-          <a href="files/Keandra_Morris_Operations_Project_Manager_Resume.docx" class="nav-resume-btn">Download Resume</a>
         </div>
       </nav>
     </div>
@@ -61,7 +53,6 @@
 
           <div class="button-row">
             <a href="#program" class="btn primary">View Case Study</a>
-            <a href="files/Keandra_Morris_Operations_Project_Manager_Resume.docx" class="btn">Download Resume</a>
           </div>
 
           <div class="hero-proof" aria-label="Selected portfolio proof points">
@@ -194,7 +185,7 @@
           </p>
 
           <div class="dashboard-card">
-            <img src="images/kitchen-dashboard.png" class="clickable-img" alt="Kitchen Operations Launch Dashboard — Python-generated project tracker showing Gantt timeline, KPI cards, priority breakdown, and task detail table" />
+            <img src="images/kitchen-dashboard.png" class="clickable-img" alt="Kitchen Operations Launch Dashboard - Python-generated project tracker showing Gantt timeline, KPI cards, priority breakdown, and task detail table" />
             <div class="dashboard-overlay">
               <h4>100% completed on time</h4>
               <p>
@@ -205,7 +196,7 @@
           </div>
           <div class="tools-used" style="margin-top:12px;">
             <strong>Built with:</strong> Python &nbsp;&middot;&nbsp; Matplotlib &nbsp;&middot;&nbsp; NumPy &nbsp;&nbsp;
-            <a href="files/kitchen_launch_dashboard.ipynb" download style="color:var(--green);font-weight:600;text-decoration:none;">&#x1F4E5; Download Notebook</a>
+            <a href="files/kitchen_launch_dashboard.ipynb" download class="inline-download-link">Download Notebook</a>
           </div>
 
           <div class="phase-grid">
@@ -658,38 +649,127 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="careeros" class="careeros-section">
       <div class="container">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Profile</p>
-            <h2>Background &amp; Education</h2>
+            <p class="eyebrow">AI Agents &amp; Automation</p>
+            <h2>Shipped AI Agent Product: CareerOS</h2>
           </div>
           <p>
-            Operations PM with 8+ years building programs from zero infrastructure to full operational
-            maturity, combining hands-on execution with data analysis, compliance systems, and digital workflow transformation.
+            CareerOS is a review-first job-search automation dashboard that scans approved
+            public job-board APIs, scores role fit, generates application packets, drafts resume and
+            cover-letter content, and routes everything into a human-review dashboard.
           </p>
         </div>
 
-        <div class="about-card light-card">
-          <div class="profile-grid">
-            <div>
-              <h3>Education</h3>
-              <ul class="bullets">
-                <li>Associate in Science, Computer Programming, Los Angeles Mission College &mdash; In Progress</li>
-                <li>Data Analytics Certificate, Los Angeles Mission College</li>
-                <li>Computer Programmer Certificate, Los Angeles Mission College</li>
-                <li>Culinary Arts &amp; Restaurant Management Certification, University of Antelope Valley</li>
-              </ul>
+        <div class="careeros-layout">
+          <article class="careeros-copy">
+            <span class="tag">CareerOS</span>
+            <h3>AI-assisted job-search operating system</h3>
+            <p>
+              Built with AI-assisted development workflows using Claude and Codex for architecture
+              iteration, implementation support, debugging, documentation, and feature refinement.
+            </p>
+
+            <div class="careeros-badges" aria-label="CareerOS product proof points">
+              <span>Shipped Product</span>
+              <span>React/Vite Dashboard</span>
+              <span>Express + SQLite Backend</span>
+              <span>AI Draft Generation</span>
+              <span>Discord Bot + Alerts</span>
+              <span>Claude + Codex Workflow</span>
+              <span>Review-First Automation</span>
             </div>
-            <div>
-              <h3>Certifications</h3>
-              <ul class="bullets">
-                <li>ServSafe Instructor &amp; Proctor</li>
-                <li>Food Protection Manager</li>
-                <li>Allergens Certification</li>
-                <li>Food Handler Certification</li>
-              </ul>
+
+            <ul class="bullets careeros-list">
+              <li>Scans Greenhouse, Lever, and Ashby public job-board APIs.</li>
+              <li>Scores jobs into Green Light, Yellow Light, and Rejected lanes.</li>
+              <li>Generates application packets with resume draft, cover letter draft, match score, red flags, and manual-apply link.</li>
+              <li>Supports OpenAI, Anthropic, or Gemini for optional AI drafts.</li>
+              <li>Sends Discord alerts and supports two-way Discord bot commands.</li>
+              <li>Keeps candidate data protected with no auto-apply, no password storage, no CAPTCHA bypass, API-key dashboard protection, and private candidate files kept out of the public portfolio.</li>
+            </ul>
+
+            <div class="tech-links">
+              <a href="https://github.com/Keandrajm/CareerOs" class="btn-tech" target="_blank" rel="noopener noreferrer">
+                View CareerOS on GitHub
+              </a>
+            </div>
+          </article>
+
+          <aside class="careeros-snapshot" aria-label="CareerOS product architecture snapshot">
+            <div class="snapshot-card">
+              <span>01</span>
+              <h4>Product Type</h4>
+              <p>Review-first AI job-search operating system with dashboard, scoring lanes, alerts, and packet generation.</p>
+            </div>
+            <div class="snapshot-card">
+              <span>02</span>
+              <h4>System Stack</h4>
+              <p>React/Vite frontend, Express API, SQLite data layer, Discord bot integration, and optional AI draft providers.</p>
+            </div>
+            <div class="snapshot-card">
+              <span>03</span>
+              <h4>Agent Workflow</h4>
+              <p>Scan jobs, score fit, route lanes, generate packets, draft content, alert priority matches, and hold for review.</p>
+            </div>
+            <div class="snapshot-card guardrail">
+              <span>04</span>
+              <h4>Automation Guardrail</h4>
+              <p>Human review required. No automatic applications, password storage, CAPTCHA bypass, or exposed candidate files.</p>
+            </div>
+          </aside>
+
+        </div>
+
+        <div class="careeros-proof-gallery" aria-label="CareerOS product screenshots">
+          <figure>
+            <img src="images/careeros-dashboard.png" class="clickable-img" alt="CareerOS dashboard showing job scan totals, scoring lanes, recent activity, filters, and scored job cards" />
+            <figcaption>CareerOS dashboard with job discovery totals, Green/Yellow/Rejected scoring lanes, recent scanner activity, filters, and scored job cards.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/careeros-discord.png" class="clickable-img" alt="Discord CareerOS bot channel showing green light job alerts, scan summaries, score outputs, and dashboard links" />
+            <figcaption>Discord-side automation showing scan summaries, Green Light job alerts, score outputs, and links back to the CareerOS review dashboard.</figcaption>
+          </figure>
+        </div>
+
+        <div class="bot-workflow-panel" aria-label="CareerOS bot and workflow diagram">
+          <div class="workflow-header">
+            <p class="eyebrow">Bot Workflow</p>
+            <h3>How the CareerOS agents move work from scan to human review</h3>
+          </div>
+
+          <div class="bot-flow">
+            <div class="bot-step">
+              <span>01</span>
+              <strong>Scheduled Scan</strong>
+              <p>Pulls approved public job-board feeds from Greenhouse, Lever, and Ashby.</p>
+            </div>
+            <div class="bot-step">
+              <span>02</span>
+              <strong>Fit Scoring</strong>
+              <p>Scores each role against target criteria, strengths, gaps, salary, and workplace fit.</p>
+            </div>
+            <div class="bot-step">
+              <span>03</span>
+              <strong>Lane Routing</strong>
+              <p>Routes roles into Green Light, Yellow Light, or Rejected review queues.</p>
+            </div>
+            <div class="bot-step">
+              <span>04</span>
+              <strong>Packet Builder</strong>
+              <p>Creates review packets with match score, resume draft, cover draft, red flags, and apply link.</p>
+            </div>
+            <div class="bot-step">
+              <span>05</span>
+              <strong>Discord Bot</strong>
+              <p>Sends scan summaries and priority alerts so high-fit roles do not get buried.</p>
+            </div>
+            <div class="bot-step">
+              <span>06</span>
+              <strong>Human Review</strong>
+              <p>Approves, rejects, saves, or marks self-applied. CareerOS never submits automatically.</p>
             </div>
           </div>
         </div>
@@ -764,6 +844,44 @@
       </div>
     </section>
 
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2>Background &amp; Education</h2>
+          </div>
+          <p>
+            Operations PM with 8+ years building programs from zero infrastructure to full operational
+            maturity, combining hands-on execution with data analysis, compliance systems, and digital workflow transformation.
+          </p>
+        </div>
+
+        <div class="about-card light-card">
+          <div class="profile-grid">
+            <div>
+              <h3>Education</h3>
+              <ul class="bullets">
+                <li>Associate in Science, Computer Programming, Los Angeles Mission College &mdash; In Progress</li>
+                <li>Data Analytics Certificate, Los Angeles Mission College</li>
+                <li>Computer Programmer Certificate, Los Angeles Mission College</li>
+                <li>Culinary Arts &amp; Restaurant Management Certification, University of Antelope Valley</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Certifications</h3>
+              <ul class="bullets">
+                <li>ServSafe Instructor &amp; Proctor</li>
+                <li>Food Protection Manager</li>
+                <li>Allergens Certification</li>
+                <li>Food Handler Certification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="cta-section" aria-label="Resume and contact">
       <div class="container cta-panel">
         <div>
@@ -776,7 +894,6 @@
         </div>
         <p class="availability-note">&#x2705; Open to Operations PM, Program Manager, and Business Operations roles. Available immediately.</p>
         <div class="button-row">
-          <a href="files/Keandra_Morris_Operations_Project_Manager_Resume.docx" class="btn primary">Download Resume</a>
           <a href="mailto:Keandrajm@outlook.com?subject=Operations%20PM%20Opportunity" class="btn dark">Email Me</a>
         </div>
       </div>
@@ -793,7 +910,7 @@
         <a href="tel:16616551773">661-655-1773</a>
         <a href="https://www.linkedin.com/in/keandra-morris-0515" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
-      <p class="portfolio-credit">Portfolio designed &amp; developed by Keandra Morris &nbsp;&middot;&nbsp; HTML &nbsp;&middot;&nbsp; CSS &nbsp;&middot;&nbsp; JavaScript</p>
+      <p class="portfolio-credit">Portfolio designed and developed in HTML, CSS, and JavaScript.</p>
       <p class="copyright">&copy; <span id="year"></span> Keandra Morris. All rights reserved.</p>
     </div>
   </footer>
@@ -812,57 +929,7 @@
     </div>
   </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Image modal
-    const imgModal  = document.getElementById('imgModal');
-    const modalImg  = document.getElementById('modalImg');
-    document.querySelectorAll('.clickable-img').forEach(img => {
-      img.addEventListener('click', () => {
-        modalImg.src = img.src;
-        modalImg.alt = img.alt;
-        imgModal.setAttribute('aria-hidden','false');
-        imgModal.style.display = 'flex';
-      });
-    });
-    imgModal.addEventListener('click', e => {
-      if (e.target === imgModal || e.target.classList.contains('close-modal')) {
-        imgModal.style.display = 'none';
-        imgModal.setAttribute('aria-hidden','true');
-        modalImg.src = '';
-      }
-    });
-
-    // Video modal
-    const videoModal = document.getElementById('videoModal');
-    const videoFrame = document.getElementById('videoFrame');
-    document.querySelectorAll('.video-card').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const videoId = btn.dataset.videoId;
-        videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
-        videoModal.setAttribute('aria-hidden','false');
-        videoModal.style.display = 'flex';
-      });
-    });
-    videoModal.addEventListener('click', e => {
-      if (e.target === videoModal || e.target.classList.contains('close-modal')) {
-        videoModal.style.display = 'none';
-        videoModal.setAttribute('aria-hidden','true');
-        videoFrame.src = '';
-      }
-    });
-
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        imgModal.style.display   = 'none';
-        imgModal.setAttribute('aria-hidden','true');
-        modalImg.src             = '';
-        videoModal.style.display = 'none';
-        videoModal.setAttribute('aria-hidden','true');
-        videoFrame.src           = '';
-      }
-    });
-  </script>
+  <a href="#top" class="back-to-top" aria-label="Back to top">Top</a>
+  <script src="js/main.js?v=20260428-06"></script>
 </body>
-</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+</html>

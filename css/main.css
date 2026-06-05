@@ -363,7 +363,7 @@ h3 {
   border-radius: 6px;
 }
 
-/* ── Technical Projects Section ──────────────────── */
+/* Technical Projects Section */
 .technical-projects-section {
   background: var(--ink-green);
   padding: 80px 0;
@@ -461,6 +461,224 @@ h3 {
   flex-wrap: wrap;
 }
 
+.careeros-section {
+  background:
+    linear-gradient(135deg, rgba(13, 31, 24, 0.98), rgba(20, 40, 31, 0.96)),
+    linear-gradient(90deg, rgba(54, 95, 115, 0.18), transparent 40%, rgba(184, 155, 99, 0.12));
+  color: var(--cream);
+  border-top: 1px solid rgba(210, 183, 124, 0.22);
+  border-bottom: 1px solid rgba(210, 183, 124, 0.16);
+}
+
+.careeros-section .section-header h2 {
+  color: var(--cream);
+}
+
+.careeros-section .section-header > p {
+  color: rgba(233, 228, 208, 0.9);
+}
+
+.careeros-layout {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.92fr) minmax(0, 1.08fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.careeros-copy {
+  border: 1px solid rgba(233, 228, 208, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+}
+
+.careeros-copy {
+  padding: 28px;
+}
+
+.careeros-copy h3 {
+  color: var(--cream);
+}
+
+.careeros-copy p,
+.careeros-list {
+  color: rgba(233, 228, 208, 0.82);
+}
+
+.careeros-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 18px 0 18px;
+}
+
+.careeros-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px solid rgba(210, 183, 124, 0.28);
+  border-radius: 6px;
+  background: rgba(233, 228, 208, 0.07);
+  color: rgba(233, 228, 208, 0.94);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.careeros-list li {
+  margin-bottom: 8px;
+}
+
+.careeros-snapshot {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.careeros-snapshot .snapshot-card {
+  display: grid;
+  align-content: start;
+  min-height: 214px;
+  padding: 24px;
+  border: 1px solid rgba(210, 183, 124, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.14);
+}
+
+.careeros-snapshot .snapshot-card span {
+  width: 38px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  background: var(--bright-gold);
+  color: var(--ink-green);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.careeros-snapshot .snapshot-card h4 {
+  color: var(--cream);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.careeros-snapshot .snapshot-card p {
+  color: rgba(233, 228, 208, 0.82);
+  font-size: 0.94rem;
+  line-height: 1.58;
+  margin: 0;
+}
+
+.careeros-snapshot .snapshot-card.guardrail {
+  background: rgba(210, 183, 124, 0.1);
+  border-color: rgba(210, 183, 124, 0.34);
+}
+
+.careeros-proof-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.careeros-proof-gallery figure {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(233, 228, 208, 0.14);
+}
+
+.careeros-proof-gallery img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.careeros-proof-gallery figcaption {
+  color: rgba(233, 228, 208, 0.82);
+}
+
+.bot-workflow-panel {
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid rgba(233, 228, 208, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.16);
+}
+
+.workflow-header {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(300px, 1fr);
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 24px;
+}
+
+.workflow-header h3 {
+  color: var(--cream);
+  margin-bottom: 0;
+}
+
+.bot-flow {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.bot-step {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  min-height: 220px;
+  padding: 18px;
+  border: 1px solid rgba(210, 183, 124, 0.22);
+  border-radius: 8px;
+  background: rgba(13, 31, 24, 0.5);
+}
+
+.bot-step::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: -10px;
+  width: 18px;
+  height: 2px;
+  background: rgba(210, 183, 124, 0.5);
+}
+
+.bot-step:last-child::after {
+  content: none;
+}
+
+.bot-step span {
+  width: 36px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--bright-gold);
+  color: var(--ink-green);
+  font-weight: 900;
+  font-size: 0.78rem;
+}
+
+.bot-step strong {
+  color: var(--cream);
+  font-size: 0.98rem;
+}
+
+.bot-step p {
+  color: rgba(233, 228, 208, 0.76);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
 .btn-tech {
   display: inline-block;
   padding: 8px 16px;
@@ -490,9 +708,21 @@ h3 {
   background: transparent;
   transform: translateY(-1px);
 }
-/* ─────────────────────────────────────────────────── */
 
-/* ── Data Section ─────────────────────────────────── */
+.inline-download-link {
+  color: var(--bright-gold);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(210, 183, 124, 0.55);
+}
+
+.inline-download-link:hover {
+  color: var(--cream);
+  border-bottom-color: var(--cream);
+}
+/* Data Section */
+
+
 .data-section {
   background: var(--porcelain);
   padding: 72px 0;
@@ -519,7 +749,7 @@ h3 {
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
 }
 
-/* ── Tools Used + Transferable + Nav CTA + Availability ──── */
+/* Tools Used + Transferable + Nav CTA + Availability */
 .tools-used {
   margin-top: 14px;
   padding: 10px 14px;
@@ -551,31 +781,13 @@ h3 {
   margin-bottom: 4px;
 }
 
-.nav-resume-btn {
-  display: inline-block;
-  padding: 7px 16px;
-  background: var(--bright-gold);
-  color: var(--deep-green) !important;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 0.88rem;
-  text-decoration: none !important;
-  transition: background 0.18s, transform 0.15s;
-  white-space: nowrap;
-}
-
-.nav-resume-btn:hover {
-  background: #c9a84c;
-  transform: translateY(-1px);
-}
-
 .availability-note {
   font-size: 0.95rem;
   color: var(--muted);
   margin-bottom: 14px;
   font-style: italic;
 }
-/* ─────────────────────────────────────────────────── */
+/* Shared Sections */
 
 .data-icon {
   font-size: 1.8rem;
@@ -596,7 +808,7 @@ h3 {
   font-size: 0.93rem;
   line-height: 1.6;
 }
-/* ─────────────────────────────────────────────────── */
+/* Card Grids */
 
 .metric strong {
   display: block;
@@ -714,6 +926,14 @@ h3 {
   text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 14px;
+}
+
+.technical-projects-section .tag,
+.careeros-section .tag {
+  background: rgba(210, 183, 124, 0.94);
+  color: var(--ink-green);
+  border-color: rgba(255, 253, 246, 0.3);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
 }
 
 .bullets {
@@ -1263,7 +1483,7 @@ footer h2 {
   position: fixed;
   right: 18px;
   bottom: 18px;
-  z-index: 30;
+  z-index: 1200;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1351,6 +1571,19 @@ figure:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .careeros-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bot-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .bot-step:nth-child(3)::after,
+  .bot-step:nth-child(6)::after {
+    content: none;
+  }
+
   .snapshot-grid,
   .playbook-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1396,6 +1629,9 @@ figure:hover {
   .technical-grid,
   .data-grid,
   .tech-project-grid,
+  .careeros-layout,
+  .careeros-snapshot,
+  .careeros-proof-gallery,
   .training-grid,
   .phase-grid,
   .video-grid,
@@ -1404,6 +1640,28 @@ figure:hover {
   .sde-gallery,
   .profile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .workflow-header,
+  .bot-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .bot-step {
+    min-height: auto;
+  }
+
+  .bot-step::after {
+    top: auto;
+    right: auto;
+    left: 34px;
+    bottom: -10px;
+    width: 2px;
+    height: 18px;
+  }
+
+  .bot-step:nth-child(3)::after {
+    content: "";
   }
 
   nav {
@@ -1504,6 +1762,15 @@ figure:hover {
 
   .metrics-grid {
     grid-template-columns: 1fr;
+  }
+
+  .careeros-copy,
+  .bot-workflow-panel {
+    padding: 20px;
+  }
+
+  .careeros-proof-gallery img {
+    height: 240px;
   }
 
   .button-row,

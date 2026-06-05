@@ -1,5 +1,5 @@
 const revealElements = document.querySelectorAll(
-  ".program-card, .project-card, .phase, .skill-box, .training-card, .snapshot-card, .playbook-step, .video-section, .dashboard-section, .tool-stack-panel, figure, .about-card, .cta-panel"
+  ".program-card, .project-card, .phase, .skill-box, .training-card, .snapshot-card, .data-card, .tech-project-card, .careeros-copy, .careeros-proof-gallery, .bot-workflow-panel, .bot-step, .video-section, .dashboard-section, figure, .about-card, .cta-panel"
 );
 
 if ("scrollRestoration" in history) {
